@@ -1,44 +1,9 @@
-﻿<div>
-    <div>
-        <h2 class="text-center">Ajouter un contact</h2>
-        <form method="post" asp-action="AddContact">
-            <div class="mb-3">
-                <label for="Name" class="form-label">Nom</label>
-                <input type="text" id="Name" name="Name" class="form-control" required/>
-            </div>
-            <div class="mb-3">
-                <label for="Email" class="form-label">Email</label>
-                <input type="email" id="Email" name="Email" class="form-control" required/>
-            </div>
-            <div class="mb-3">
-                <label for="Phone" class="form-label">Téléphone</label>
-                <input type="text" id="Phone" name="Phone" class="form-control" required/>
-            </div>
-            <div class="text-center">
-                <button type="submit" class="btn btn-primary">Ajouter</button>
-            </div>
-        </form>
-    </div>
+﻿@{
+    ViewData["Title"] = "Contacts";
+}
+@model List<ContactApp.Models.ContactModel>
 
-
-    <div class="mt-5">
-        <h2 class="text-center">Liste de contacts</h2>
-        @* Barre de recherche qui filtre les contacts par nom *@
-        <form method="get" asp-action="Index" class="mb-4">
-            <input type="search" name="searchValue" class="form-control" placeholder="Chercher un nom"
-                   value="@Context.Request.Query["searchValue"]" />
-        </form>
-
-        @* Liste des contacts *@
-        <ul>
-            @foreach (var contact in Model)
-            {
-                <li>@contact.Name : @contact.Email - @contact.Phone
-                    <form method="post" action="/Contact/delete/@contact.Id" style="display:inline;">
-                    <button class="btn btn-danger ms-5">Supprimer</button>
-                    </form>
-                </li>
-            }
-        </ul>
-    </div>
+<div>
+    @await Html.PartialAsync("_AddContactForm", new ContactModel())
+    @await Html.PartialAsync("_ContactList", Model)
 </div>

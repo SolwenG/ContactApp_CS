@@ -1,51 +1,58 @@
 ﻿using ContactApp.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
-namespace ContactApp.Controllers;
-
-[ApiController]
-[Route("[controller]")]
-public class ContactController : Controller
+namespace ContactApp.Controllers
 {
-    private static readonly List<ContactModel> Contacts =
-    [
-        new ContactModel(1, "Solene", "example@gmail.com", "1234567890")
-    ];
-
-    [HttpGet]
-    public IActionResult Index(string? searchValue = null)
+    public class ContactController : Controller
     {
-        var contacts = string.IsNullOrEmpty(searchValue)
-            ? Contacts
-            : Contacts.Where(contact => contact.Name.Contains(searchValue, StringComparison.OrdinalIgnoreCase))
-                .ToList();
+        private readonly ApplicationDbContext _context;
 
-        return View(contacts);
-    }
-
-    [HttpPost]
-    public IActionResult AddContact([FromForm] ContactModel contact)
-    {
-        int Id = Contacts.Count + 1;
-        contact.Id = Id;
-        Contacts.Add(contact);
-
-        return RedirectToAction("Index");
-    }
-
-    [HttpPost]
-    [Route("delete/{id:int}")]
-    public IActionResult RemoveContact(int id)
-    {
-        var existingContacts = Contacts.FirstOrDefault(contact => contact.Id == id);
-        Console.WriteLine(existingContacts);
-        if (existingContacts == null)
+        public ContactController(ApplicationDbContext context)
         {
-            return NotFound();
+            _context = context;
         }
 
-        Contacts.Remove(existingContacts);
+        public async Task<IActionResult> Index(string? searchValue = null)
+        {
+            var contacts = string.IsNullOrEmpty(searchValue)
+                ? await _context.Contacts.ToListAsync()
+                : await _context.Contacts
+                    .Where(contact => contact.Name.Contains(searchValue, StringComparison.OrdinalIgnoreCase))
+                    .ToListAsync();
 
-        return RedirectToAction("Index");
+            return View(contacts);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddContact(ContactModel contact)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Contacts.Add(contact);
+                await _context.SaveChangesAsync();
+
+                TempData["Message"] = "Contact ajouté avec succès !";
+                return RedirectToAction("Index");
+            }
+
+            return View("Index", await _context.Contacts.ToListAsync());
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteContact(int id)
+        {
+            var contact = await _context.Contacts.FindAsync(id);
+            if (contact == null)
+            {
+                return NotFound();
+            }
+
+            _context.Contacts.Remove(contact);
+            await _context.SaveChangesAsync();
+
+            TempData["Message"] = "Contact supprimé avec succès !";
+            return RedirectToAction("Index");
+        }
     }
 }

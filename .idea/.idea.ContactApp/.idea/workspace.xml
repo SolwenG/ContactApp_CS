@@ -9,18 +9,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="758fe6bd-98cb-4ead-933d-92e469674e93" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.ContactApp/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ContactApp/Controllers/ContactController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ContactApp/Models/ContactModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ContactApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ContactApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactApp/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContactApp/Views/Contact/_AddContactForm.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/Views/Contact/_AddContactForm.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactApp/bin/Debug/net9.0/ContactApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/bin/Debug/net9.0/ContactApp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactApp/bin/Debug/net9.0/ContactApp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/bin/Debug/net9.0/ContactApp.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactApp/bin/Debug/net9.0/ContactApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/bin/Debug/net9.0/ContactApp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/ContactApp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/ContactApp.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/ContactApp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/ContactApp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/ContactApp.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/ContactApp.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/ContactApp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/ContactApp.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/ContactApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/ContactApp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/ContactApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/ContactApp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/apphost.exe" afterDir="false" />
@@ -37,13 +32,45 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SolwenG&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SolwenG/ContactApp_CS.git&quot;,
+    &quot;accountId&quot;: &quot;068e4a2d-8867-426c-9ea5-bba902eb123a&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1b7d7cb6609f8d85f36dfd4df6123c8060f4fd5e1699c5f959de6e918d7351/RazorPageOfT.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/solen/Documents/CDA/Cours/C#/ContactApp/ContactApp/Views/Contact/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/solen/Documents/CDA/Cours/C#/ContactApp/ContactApp/Views/Contact/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/solen/Documents/CDA/Cours/C#/ContactApp/ContactApp/Views/Contact/_AddContactForm.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/solen/Documents/CDA/Cours/C#/ContactApp/ContactApp/Views/Contact/_AddContactForm.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/solen/Documents/CDA/Cours/C#/ContactApp/ContactApp/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/solen/Documents/CDA/Cours/C#/ContactApp/ContactApp/obj/Debug/net9.0/ContactApp.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ContactApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ContactApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ContactApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2sZOVoQivq2VlEMF8LnQjEB0BDK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -53,6 +80,7 @@
     ".NET Launch Settings Profile.ContactApp: http.executor": "Run",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
@@ -60,6 +88,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -104,7 +133,75 @@
       <option name="presentableId" value="Default" />
       <updated>1738659659155</updated>
       <workItem from="1738659659557" duration="362000" />
+      <workItem from="1738742035207" duration="15103000" />
+      <workItem from="1738765465651" duration="288000" />
+      <workItem from="1738766042479" duration="318000" />
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1738683272547</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1738683272547</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added EntityFramework">
+      <option name="closed" value="true" />
+      <created>1738684028522</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1738684028522</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added EntityFramework">
+      <option name="closed" value="true" />
+      <created>1738684471475</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738684471475</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added EntityFramework">
+      <option name="closed" value="true" />
+      <created>1738684832289</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738684832289</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added EntityFramework and PartialViews">
+      <option name="closed" value="true" />
+      <created>1738746124751</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738746124751</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added EntityFramework and PartialViews">
+      <option name="closed" value="true" />
+      <created>1738764932452</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738764932452</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added EntityFramework and PartialViews">
+      <option name="closed" value="true" />
+      <created>1738765217891</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1738765217891</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added EntityFramework and PartialViews">
+      <option name="closed" value="true" />
+      <created>1738765930759</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738765930759</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,7 +209,22 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="Added EntityFramework" />
+    <MESSAGE value="Added EntityFramework and PartialViews" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added EntityFramework and PartialViews" />
   </component>
 </project>

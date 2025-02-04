@@ -1,0 +1,25 @@
+@model ContactApp.Models.ContactModel
+
+<div>
+    <h2 class="text-center">Ajouter un contact</h2>
+    <form method="post" asp-action="AddContact">
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label">Nom</label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Email" class="form-label">Email</label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Phone" class="form-label">Téléphone</label>
+            <input asp-for="Phone" class="form-control" />
+            <span asp-validation-for="Phone" class="text-danger"></span>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Ajouter</button>
+        </div>
+    </form>
+</div>
