@@ -8,7 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="758fe6bd-98cb-4ead-933d-92e469674e93" name="Changes" comment="">
+    <list default="true" id="758fe6bd-98cb-4ead-933d-92e469674e93" name="Changes" comment="Added EntityFramework and PartialViews">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ContactApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ContactApp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactApp/Views/Contact/_AddContactForm.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/Views/Contact/_AddContactForm.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ContactApp/bin/Debug/net9.0/ContactApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/bin/Debug/net9.0/ContactApp.dll" afterDir="false" />
@@ -135,7 +135,7 @@
       <workItem from="1738659659557" duration="362000" />
       <workItem from="1738742035207" duration="15103000" />
       <workItem from="1738765465651" duration="288000" />
-      <workItem from="1738766042479" duration="318000" />
+      <workItem from="1738766042479" duration="963000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -201,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738765930759</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added EntityFramework and PartialViews">
+      <option name="closed" value="true" />
+      <created>1738766465992</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738766465992</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -4,19 +4,19 @@
     <h2 class="text-center">Ajouter un contact</h2>
     <form method="post" asp-action="AddContact">
         <div class="mb-3">
-            <label asp-for="Name" class="form-label">Nom</label>
-            <input asp-for="Name" class="form-control" />
-            <span asp-validation-for="Name" class="text-danger"></span>
+            @Html.LabelFor(m => m.Name, "Nom :",new { @class = "form-label" })
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Name, "", new { @class = "text-danger" })
         </div>
         <div class="mb-3">
-            <label asp-for="Email" class="form-label">Email</label>
-            <input asp-for="Email" class="form-control" />
-            <span asp-validation-for="Email" class="text-danger"></span>
+            @Html.LabelFor(m => m.Email, "Email :",new { @class = "form-label" })
+            @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
         </div>
         <div class="mb-3">
-            <label asp-for="Phone" class="form-label">Téléphone</label>
-            <input asp-for="Phone" class="form-control" />
-            <span asp-validation-for="Phone" class="text-danger"></span>
+            @Html.LabelFor(m => m.Phone,"Téléphone :", new { @class = "form-label" })
+            @Html.TextBoxFor(m => m.Phone, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Phone, "", new { @class = "text-danger" })
         </div>
         <div class="text-center">
             <button type="submit" class="btn btn-primary">Ajouter</button>
