@@ -8,19 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="758fe6bd-98cb-4ead-933d-92e469674e93" name="Changes" comment="Added EntityFramework and PartialViews">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ContactApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ContactApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactApp/Views/Contact/_AddContactForm.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/Views/Contact/_AddContactForm.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactApp/bin/Debug/net9.0/ContactApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/bin/Debug/net9.0/ContactApp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactApp/bin/Debug/net9.0/ContactApp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/bin/Debug/net9.0/ContactApp.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactApp/bin/Debug/net9.0/ContactApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/bin/Debug/net9.0/ContactApp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/ContactApp.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/ContactApp.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/ContactApp.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/ContactApp.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/ContactApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/ContactApp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/ContactApp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/ContactApp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/apphost.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/ref/ContactApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/ref/ContactApp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/refint/ContactApp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/obj/Debug/net9.0/refint/ContactApp.dll" afterDir="false" />
+    <list default="true" id="758fe6bd-98cb-4ead-933d-92e469674e93" name="Changes" comment="Corrections delete and research">
+      <change beforePath="$PROJECT_DIR$/ContactApp/Views/Contact/_ContactList.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/ContactApp/Views/Contact/_ContactList.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,15 +37,10 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1b7d7cb6609f8d85f36dfd4df6123c8060f4fd5e1699c5f959de6e918d7351/RazorPageOfT.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/solen/Documents/CDA/Cours/C#/ContactApp/ContactApp/Views/Contact/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/solen/Documents/CDA/Cours/C#/ContactApp/ContactApp/Views/Contact/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/solen/Documents/CDA/Cours/C#/ContactApp/ContactApp/Views/Contact/_AddContactForm.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/solen/Documents/CDA/Cours/C#/ContactApp/ContactApp/Views/Contact/_AddContactForm.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/solen/Documents/CDA/Cours/C#/ContactApp/ContactApp/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/solen/Documents/CDA/Cours/C#/ContactApp/ContactApp/obj/Debug/net9.0/ContactApp.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ContactApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ContactApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ContactApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ContactApp/wwwroot/lib/jquery/dist/jquery.slim.min.map" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
@@ -135,7 +119,7 @@
       <workItem from="1738659659557" duration="362000" />
       <workItem from="1738742035207" duration="15103000" />
       <workItem from="1738765465651" duration="288000" />
-      <workItem from="1738766042479" duration="963000" />
+      <workItem from="1738766042479" duration="3982000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -209,7 +193,31 @@
       <option name="project" value="LOCAL" />
       <updated>1738766465992</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Updated AddContactForm with Helpers Html">
+      <option name="closed" value="true" />
+      <created>1738767135057</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1738767135057</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Correction DeleteContact">
+      <option name="closed" value="true" />
+      <created>1738768271234</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738768271234</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Corrections delete and research">
+      <option name="closed" value="true" />
+      <created>1738770784411</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1738770784411</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +241,9 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="Added EntityFramework" />
     <MESSAGE value="Added EntityFramework and PartialViews" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added EntityFramework and PartialViews" />
+    <MESSAGE value="Updated AddContactForm with Helpers Html" />
+    <MESSAGE value="Correction DeleteContact" />
+    <MESSAGE value="Corrections delete and research" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrections delete and research" />
   </component>
 </project>

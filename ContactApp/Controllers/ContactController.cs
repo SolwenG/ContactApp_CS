@@ -17,9 +17,7 @@ namespace ContactApp.Controllers
         {
             var contacts = string.IsNullOrEmpty(searchValue)
                 ? await _context.Contacts.ToListAsync()
-                : await _context.Contacts
-                    .Where(contact => contact.Name.Contains(searchValue, StringComparison.OrdinalIgnoreCase))
-                    .ToListAsync();
+                : await _context.Contacts.Where(c => c.Name.ToLower().Contains(searchValue.ToLower())).ToListAsync();
 
             return View(contacts);
         }
